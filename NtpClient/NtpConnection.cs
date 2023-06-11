@@ -36,7 +36,7 @@ namespace NtpClient
             var addresses = Dns.GetHostEntry(_server).AddressList;
             var ipEndPoint = new IPEndPoint(addresses[0], 123);
             var socket =
-                new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp) {ReceiveTimeout = 3000};
+                new Socket(addresses[0].AddressFamily, SocketType.Dgram, ProtocolType.Udp) {ReceiveTimeout = 3000};
 
             socket.Connect(ipEndPoint);
             socket.Send(ntpData);
