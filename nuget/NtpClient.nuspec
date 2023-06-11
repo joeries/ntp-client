@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+<package >
   <metadata>
-    <id>$id$</id>
-    <version>$version$</version>
+    <id>Joeries.NtpClient</id>
+    <version>1.0.16</version>
     <title>Ntp Client</title>
-    <description>Portable NuGet library/package for communicating with ntp-server(s).</description>
+    <description>Portable NuGet library/package for communicating with ntp-server(s). Modify the original NTPClient source code to support IPv6.</description>
     <authors>Wichard Riezebos</authors>
     <owners>Wichard Riezebos</owners>
-    <projectUrl>https://github.com/joeries/ntp-client</projectUrl>
+    <projectUrl>https://github.com/WichardRiezebos/ntp-client</projectUrl>
     <!--<iconUrl>https://raw.githubusercontent.com/WichardRiezebos/ntp-client/master/icon.png</iconUrl>-->
     <tags>ntp client</tags>
     <dependencies>
       <group targetFramework=".NETFramework4.0">
       </group>
     </dependencies>
+    <references>
+      <reference file="NtpClient.dll" />
+    </references>
   </metadata>
 </package>
